@@ -2,13 +2,6 @@
 // YOU CAN FREELY MODIFY THE CODE BELOW IN ORDER TO COMPLETE THE TASK
 // ---------------------------------------------------------------------------------------------
 
-export default async (req, res) => {
-  res.sendStatus(500);
-}
-// ---------------------------------------------------------------------------------------------
-// YOU CAN FREELY MODIFY THE CODE BELOW IN ORDER TO COMPLETE THE TASK
-// ---------------------------------------------------------------------------------------------
-
 import { getDatabase } from './utils';
 
 const { db, Player, PlayerSkill } = getDatabase();
@@ -46,3 +39,4 @@ export default async (req, res) => {
     return res.status(500).json({ error: 'Failed to delete player' });
   }
 };
+
