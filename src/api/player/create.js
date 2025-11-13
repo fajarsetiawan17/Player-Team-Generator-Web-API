@@ -6,9 +6,6 @@ import { getDatabase, validatePlayerPayload, formatPlayer } from './utils';
 
 const { db, Player, PlayerSkill } = getDatabase();
 
-export default async (req, res) => {
-  res.sendStatus(500);
-}
   const { data, errors } = validatePlayerPayload(req.body);
 
   if (errors) {
